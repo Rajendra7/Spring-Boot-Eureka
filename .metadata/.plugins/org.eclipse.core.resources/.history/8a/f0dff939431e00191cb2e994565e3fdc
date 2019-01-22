@@ -1,0 +1,20 @@
+package com.app.web.EurekaWebsite;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication
+public class EurekaWebsiteApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EurekaWebsiteApplication.class, args);
+	}
+	
+	@Bean
+	public RestTemplate restTemplate() {
+		return new RestTemplate();
+	}
+
+}
+
